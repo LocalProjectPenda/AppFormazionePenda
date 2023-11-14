@@ -9,10 +9,12 @@ namespace EuroCentralBank
     public class Organisation : State
     {
         ONU _ONU;
-        public Organisation(string bandiera, string moneta, bool esercizi, int costi, int confine)
-            :base(bandiera, moneta, esercizi, costi, confine)
+        UE _UE;
+        public Organisation(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area)
+            :base(bandiera, moneta, esercizi, costi, confine, nameGeo, area)
         {
             _ONU = new ONU(this);
+            _UE = new UE(this);
         }
         
         

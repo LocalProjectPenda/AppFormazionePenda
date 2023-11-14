@@ -14,7 +14,8 @@ namespace EuroCentralBank
         public int costi { get; set; }
         public int confine { get; set; }
 
-        public State(string bandiera, string moneta, bool esercizi, int costi, int confine):base()
+        public State(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area)
+            :base(nameGeo, area)
         {
             this.bandiera = bandiera;
             this.moneta = moneta;

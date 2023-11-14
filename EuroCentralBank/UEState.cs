@@ -8,8 +8,8 @@ namespace EuroCentralBank
 {
     class UEState:State, IUnionEuropea
     {
-        public UEState(string bandiera, string moneta, bool esercizi, int costi, int confine) 
-            :base(bandiera, moneta, esercizi, costi, confine)
+        public UEState(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area) 
+            :base(bandiera, moneta, esercizi, costi, confine, nameGeo, area)
         { }
       public  void ema()
         {

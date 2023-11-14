@@ -10,7 +10,8 @@ namespace EuroCentralBank
     {
        // public bool euro {  get; set; }
 
-        public EuroZoneState(string bandiera, string moneta, bool esercizi, int costi, int confine):base(bandiera, moneta, esercizi, costi, confine) 
+        public EuroZoneState(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area) 
+            :base(bandiera, moneta, esercizi, costi, confine, nameGeo, area) 
             { }
         public void monentaUnica() { }
         public void calcSpread()
