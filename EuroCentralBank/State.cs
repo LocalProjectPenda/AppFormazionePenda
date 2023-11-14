@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    abstract class State: IONU
+   public abstract class State: AreaGeo,IONU
     {
         public string bandiera { get; set; }
-        public string[] moneta { get; set; }
+        public string moneta { get; set; }
         public bool esercizi { get; set; }
         public int costi { get; set; }
         public int confine { get; set; }
 
-        public State(string bandiera, string[] moneta, bool esercizi, int costi, int confine)
+        public State(string bandiera, string moneta, bool esercizi, int costi, int confine):base()
         {
             this.bandiera = bandiera;
             this.moneta = moneta;
