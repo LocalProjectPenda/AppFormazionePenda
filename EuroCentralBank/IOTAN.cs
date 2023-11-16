@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    public interface IEnte
+    internal interface IOTAN
     {
+       decimal SpesaMilitary(decimal spese);
     }
 }

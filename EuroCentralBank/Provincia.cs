@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    internal class Provincia:AreaGeo, IEnte
+    public class Provincia :AreaGeo, UEPublicAdministration
     {
        public Provincia(string nameGeo, decimal area):base(nameGeo, area) { }
+
+        public override void WelfareService() { }
+        public abstract void HNS(UECitizenPublicService ID) { }
+        public abstract void EducationSystem(UECitizenPublicService ID) { }
+
+
+        public void HNS() { }
+        public void LAWSystem() { }
+        public void EducationSystem() { }
     }
 }

@@ -9,25 +9,25 @@ namespace appPenda
    abstract class Ente
     {
         
-        public string nameEnte;
-        public string address;
-        protected string PIVA;
+        //public string nameEnte;
+        //public string address;
+        //protected string PIVA;
         
         
         //    protected string Regione;
         //    protected string Provincia;
         //    protected string Comune;
 
-        public Ente(string _nameEnte, string _address, string _pIVA)
+        public Ente()
             {
-            nameEnte = _nameEnte;
-            address = _address;
-            PIVA = _pIVA;
+            //nameEnte = _nameEnte;
+           // address = _address;
+           // PIVA = _pIVA;
 
         }
         public virtual void getInfo()
         {
-            Console.WriteLine($"{nameEnte} {address}");
+           // Console.WriteLine($"{nameEnte} {address}");
         }
         
 

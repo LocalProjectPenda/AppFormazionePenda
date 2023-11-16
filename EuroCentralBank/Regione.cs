@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    internal class Regione: AreaGeo, IEnte
+    internal class Regione: AreaGeo
     {
         public Regione(string nameGeo, decimal area):base(nameGeo, area) 
         {

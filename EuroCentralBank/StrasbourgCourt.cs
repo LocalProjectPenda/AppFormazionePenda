@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    public class ONU: IONU
+    public class StrasbourgCourt :IONU
     {
-        public string UNICEF_Office;
-        public string OMS_Office;
-        public string FIFA_Office;
-       
-
+        public StrasbourgCourt()
+            
+        {
+           
+        }
         public void territoryDefense()
         {
 
         }
-      public  void populationControl()
+        public void populationControl()
         {
 
         }
+
     }
 }

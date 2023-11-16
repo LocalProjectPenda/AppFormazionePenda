@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    public class UE:IUE
+    public class UE
     {
-        Organisation _organisation;
-        public UE(Organisation organisation)
+        public UEState _UEState ;
+       
+        public UE()
         {
-            _organisation = organisation;
+           
+        }
+        public void AddUEState(UEState ueState)
+        {
+            _UEState = ueState;
+        }
+        public void RemoveUEState()
+        {
+
+            _UEState = null;
         }
     }
 }
+

@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    class UEState:State, IUnionEuropea
+   public class UEState:State, IUnionEuropea
     {
-        public UEState(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area) 
+        public UE _UE;
+        public UEState(string bandiera, string moneta, bool esercizi, int costi, int confine, string nameGeo, decimal area, UE ue) 
             :base(bandiera, moneta, esercizi, costi, confine, nameGeo, area)
-        { }
-      public  void ema()
+        {
+            _UE = ue;
+            ue.AddUEState(this);
+        }
+
+      
+        public  void ema()
         {
 
         }

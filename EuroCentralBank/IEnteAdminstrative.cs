@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    internal interface IONU : IPoliticalOrg
+   public interface IEnteAdminstrative
     {
-        void territoryDefense();
-        void populationControl();
+        void HNS();
+        void LAWSystem();
+        void EducationSystem();
+        
     }
 }

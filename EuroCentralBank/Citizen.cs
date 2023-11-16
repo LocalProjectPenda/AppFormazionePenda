@@ -16,7 +16,7 @@ namespace appPenda
         public Municipality _municipality;
 
        
-        public Citizen(string firstName, string lastName, int _year, bool _noSolde, int _child, int _pil, bool _debit)
+        public Citizen(string firstName, string lastName, int _year, bool _noSolde, int _child, int _pil, bool _debit, Municipality _municipality)
                 : base(firstName, lastName, _year)
             {
                 noSolde = _noSolde;

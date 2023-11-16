@@ -11,6 +11,7 @@ namespace appPenda
         public string firstName { get; set; }
         public string lastName { get; set; }
         public int _year { get; set; }
+        public string CodeFiscal { get; set; }
 
 
 

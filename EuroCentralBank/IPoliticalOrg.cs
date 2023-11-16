@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-    internal interface IUE
+    internal interface IPoliticalOrg
     {
     }
 }

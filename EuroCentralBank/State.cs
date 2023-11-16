@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EuroCentralBank
 {
-   public abstract class State: AreaGeo,IONU
+   public abstract class State: AreaGeo,IONU, IEnteAdminstrative
     {
         public string bandiera { get; set; }
         public string moneta { get; set; }
@@ -26,8 +26,23 @@ namespace EuroCentralBank
 
         public void territoryDefense() { }
         public void populationControl() { }
-       // public virtual bool euro() {
-       //     return true;
-       // }
+
+        public void HNS()
+        {
+           
+        }
+
+        public void LAWSystem()
+        {
+         
+        }
+
+        public void EducationSystem()
+        {
+            
+        }
+        // public virtual bool euro() {
+        //     return true;
+        // }
     }
 }
